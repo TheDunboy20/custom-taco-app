@@ -41,9 +41,12 @@
 
         <h3>Here's how I'll pay...</h3>
         <label for="ccNumber">Credit Card #: </label>
-        Listing 2.9 A taco order form view
-        47Processing form submission
         <input type="text" th:field="*{ccNumber}"/>
+        <span class="validationError"
+            th:if="${#fields.hasErrors('ccNumber')}"
+            th:errors="*{ccNumber}">
+
+        </span>
         <br/>
 
         <label for="ccExpiration">Expiration: </label>
