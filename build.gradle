@@ -26,6 +26,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc:3.2.2'
+	testImplementation 'com.h2database:h2:2.2.224'
 }
 
 tasks.named('test') {
